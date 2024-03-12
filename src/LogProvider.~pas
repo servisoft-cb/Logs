@@ -422,6 +422,10 @@ begin
     FUserName  := Config.ReadString('bando de dados', 'username', '');
     FPassword  := Decoder64.DecodeString( Config.ReadString('bando de dados', 'password', '') );
     FVendorLib := Config.ReadString('bando de dados', 'VendorLib', '');
+    if trim(vVendorLib) <> '' then
+      scoDados.VendorLib := vVendorLib;
+
+
   finally
     FreeAndNil(Decoder64);
     FreeAndNil(Config);
