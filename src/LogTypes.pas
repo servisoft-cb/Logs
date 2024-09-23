@@ -39,7 +39,9 @@ begin
   FName     := AName;
   FValue    := AValue;
   FNewValue := EmptyStr;
-  FAdditionalValue := AAdditionalValue; 
+  FAdditionalValue := AAdditionalValue;
 end;
 
 end.
+
+
